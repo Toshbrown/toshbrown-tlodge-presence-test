@@ -1,0 +1,75 @@
+{
+    "manifest-version": 1,
+    "name": "toshbrown-tlodge-presence-test",
+    "version": "0.1.0",
+    "description": "testing presence",
+    "author": "Toshbrown",
+    "licence": "MIT",
+    "databox-type": "app",
+    "tags": [
+        "test"
+    ],
+    "homepage": "https://github.com/toshbrown/task_ten",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/toshbrown/task_ten.git"
+    },
+    "packages": [
+        {
+            "id": "dea91d5a.4783b",
+            "name": "new package",
+            "purpose": "test",
+            "required": false,
+            "datastores": [
+                "c37f93a9.f6c65",
+                "25317685.d2bbaa",
+                "74d3bd43.7094e4",
+                "dfe46825.10a458",
+                "d5e17530.3b0428"
+            ],
+            "benefits": "test"
+        }
+    ],
+    "allowed-combinations": [],
+    "datasources": [
+        {
+            "type": "hue-ZLLPresence",
+            "required": true,
+            "name": "bulbsin",
+            "clientid": "c37f93a9.f6c65",
+            "granularities": []
+        },
+        {
+            "type": "TP-SetPowerState",
+            "required": true,
+            "name": "plugout",
+            "clientid": "25317685.d2bbaa",
+            "granularities": []
+        },
+        {
+            "type": "TP-SetPowerState",
+            "required": true,
+            "name": "plugout",
+            "clientid": "74d3bd43.7094e4",
+            "granularities": []
+        },
+        {
+            "type": "set-bulb-on",
+            "required": true,
+            "name": "bulbsout",
+            "clientid": "dfe46825.10a458",
+            "granularities": []
+        },
+        {
+            "type": "twitterHashTagStream",
+            "required": true,
+            "name": "twitter",
+            "clientid": "d5e17530.3b0428",
+            "granularities": []
+        }
+    ],
+    "network-permissions": [],
+    "resource-requirements": {},
+    "volumes": [],
+    "export-whitelist": []
+}
